@@ -1,14 +1,12 @@
-const express = require('express')
-const htmlRoute = require('./routes/htmlroutes.js')
-const apiRoutes = require('./routes/apiroute.js')
+const express = require('express');
+const htmlRoute = require('./routes/htmlroutes.js');
+const apiRoutes = require('./routes/apiroute.js');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.urlencoded(
-    { 
-        extended: true 
-    }
+    {extended: true}
 ));
 
 app.use(express.static('public'));
