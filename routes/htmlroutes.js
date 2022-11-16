@@ -17,5 +17,3 @@ router.get('*', (req, res) => {
 
 module.exports = router;
 
-
-//commented out 'node_modules\express\lib\router\index.js:469:13' make sure ot get it fixed
